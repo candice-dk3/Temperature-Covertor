@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#temp-con-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dda15e;
+    border-radius: 40px;
+}
+.temp-converter label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.temp-converter {
+    border: 5px solid lightblue;
+    padding: 20px;
+    border-radius: 40px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.temp-converter h1 {
+    color: lightpink;
+    margin-bottom: 20px;
+}
+.temp-converter h2{
+    color: lightpink;
+}
+.temp-converter input, .temp-converter select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid lightpink;
+    border-radius: 5px;
+}
+.temp-converter button {
+    width: 100%;
+    padding: 10px;
+    background-color: lightpink;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.temp-converter button:hover {
+    background-color: white;
+    color: lightblue;
+}
+#result {
+    margin-top: 20px;
+}
+#convertedValue {
+    color: lightblue;
+    font-weight: bold;
+
+}

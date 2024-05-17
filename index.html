@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor - Calulator</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="temp-con-container">
+        <div class="temp-converter">
+            <h1>Temperature Converter</h1>
+            <form id="tempForm">
+                <label for="temperature">Temperature:</label>
+                <input type="number" id="temperature" name="temperature" required>
+                <label for="fromUnit">From:</label>
+                <select id="fromUnit" name="fromUnit">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                </select>
+                <label for="toUnit">To:</label>
+                <select id="toUnit" name="toUnit">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                </select>
+                <button type="button" id="convert">Convert</button>
+            </form>
+            <div id="result">
+                <h2>Converted Temperature: <span id="convertedValue"></span></h2>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./script/temp-con-calc.js"></script>
+</body>
+</html>
